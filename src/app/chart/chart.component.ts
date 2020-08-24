@@ -46,7 +46,7 @@ export class ChartComponent implements OnInit {
       },
       legend: {
         data: chartData.map((el) => {
-          return el.xname;
+          return el.xPathName;
         }),
       },
       grid: ChartComponent.GRID_SETTINGS,
@@ -54,7 +54,7 @@ export class ChartComponent implements OnInit {
         type: "category",
         boundaryGap: false,
         data: chartData.map((el) => {
-          return el.xname;
+          return el.xPathName;
         }),
       },
       yAxis: {

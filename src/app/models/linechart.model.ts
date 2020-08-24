@@ -1,5 +1,6 @@
 export interface BasicLineChartModel {
-  xname: string;
+  id: number;
+  xPathName: string;
   name: string;
   type: string;
   data: number[];

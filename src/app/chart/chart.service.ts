@@ -9,7 +9,7 @@ export class ChartService {
   constructor(private httpClient: HttpClient) {}
   private fetchDataFromServer(): Observable<BasicLineChartModel[]> {
     return this.httpClient.get<BasicLineChartModel[]>(
-      "/assets/chart/line-chart-data.json"
+      "http://127.0.0.1:5000/sourcedata"
     );
   }
   getLineChartData(): Observable<BasicLineChartModel[]> {

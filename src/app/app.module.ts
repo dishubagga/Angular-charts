@@ -5,9 +5,16 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ChartComponent } from "./chart/chart.component";
+import { LinearChartComponent } from "./chart/linear-chart/linear-chart.component";
+import { DynamicChartComponent } from "./chart/dynamic-chart/dynamic-chart.component";
 
 @NgModule({
-  declarations: [AppComponent, ChartComponent],
+  declarations: [
+    AppComponent,
+    ChartComponent,
+    LinearChartComponent,
+    DynamicChartComponent,
+  ],
   imports: [
     HttpClientModule,
     BrowserModule,

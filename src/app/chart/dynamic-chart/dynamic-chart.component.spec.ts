@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { ChartComponent } from "./chart.component";
+import { DynamicChartComponent } from "./dynamic-chart.component";
 
-describe("ChartComponent", () => {
-  let component: ChartComponent;
-  let fixture: ComponentFixture<ChartComponent>;
+describe("DynamicChartComponent", () => {
+  let component: DynamicChartComponent;
+  let fixture: ComponentFixture<DynamicChartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ChartComponent],
+      declarations: [DynamicChartComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChartComponent);
+    fixture = TestBed.createComponent(DynamicChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
